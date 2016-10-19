@@ -7,42 +7,43 @@ html, body {
 
  @keyframes color-animation {
     0% {
-       background: #ad1457;
+       background: rgb(172,135,255);
     }
-    10%{
-      background: #34344a;
-    }
-    20%{
-      background: #80475e;
-    }
-    30%{
-      background: #fcfcfc;
-    }
-    40%{
-      background: #f756fc;
-    }
-    50% {
-       background: #6a1b9a;
-    }
-    60%{
-      background: #93a8ac;
-    }
-    70%{
-      background: #34344a;
-    }
-    80%{
-      background: #804758;
-    }
-    90%{
-      background: #0d0221;
-    }
-    100% {
-       background: #bbdefb
-    }
+     10%{
+         background: rgb(232,123,186);
+     }
+     20%{
+         background: rgb(255,183,148);
+     }
+     30%{
+         background: rgb(232,211,149);
+     }
+     40%{
+         background: rgb(223,255,145);
+     }
+     50%{
+         background: rgb(118,255,113);
+     }
+     60%{
+         background: rgb(137,232,123);
+     }
+     70%{
+         background: rgb(148,255,240);
+     }
+     80%{
+         background: rgb(149,169,232);
+     }
+     90%{
+         background: rgb(219,146,255);
+     }
+     100%{
+         background: rgb(232,232,232);
+     }
+
  }
 
 .block {
    width: 100%;
    height: 100%;
-   animation: color-animation 40s infinite linear alternate;
+   animation: color-animation 50s infinite linear alternate;
 }
