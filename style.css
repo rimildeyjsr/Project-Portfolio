@@ -1,0 +1,48 @@
+html, body {
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+  }
+
+ @keyframes color-animation {
+    0% {
+       background: #ad1457;
+    }
+    10%{
+      background: #34344a;
+    }
+    20%{
+      background: #80475e;
+    }
+    30%{
+      background: #fcfcfc;
+    }
+    40%{
+      background: #f756fc;
+    }
+    50% {
+       background: #6a1b9a;
+    }
+    60%{
+      background: #93a8ac;
+    }
+    70%{
+      background: #34344a;
+    }
+    80%{
+      background: #804758;
+    }
+    90%{
+      background: #0d0221;
+    }
+    100% {
+       background: #bbdefb
+    }
+ }
+
+.block {
+   width: 100%;
+   height: 100%;
+   animation: color-animation 40s infinite linear alternate;
+}
