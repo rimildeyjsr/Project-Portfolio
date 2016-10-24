@@ -36,16 +36,17 @@
          <span id="main-heading"></span>
       </div>
 
+
       <div class="content shadow-font">
-          <h2 id="content">While I get this space up<br>and running, you can find<br> me here.......</h2>
+          <h2 id="content" class="together">While I get this space up<br>and running, you can find<br> me here.......</h2>
       </div>
 
-      <img src="arrow.png" class="arrow" alt="arrow image">
+      <img src="arrow.png" class="arrow together" alt="arrow image">
 
       <div class="social">
-          <i class="fa fa-twitter fa-4x icon" aria-hidden="true"></i>
-          <i class="fa fa-github fa-4x icon" aria-hidden="true"></i>
-          <i class="material-icons icon md-48">mail</i>
+          <a href="https://twitter.com/hackertronix"><i class="fa fa-twitter fa-4x icon" aria-hidden="true"></i></a>
+          <a href="https://github.com/hackertronix"><i class="fa fa-github fa-4x icon" aria-hidden="true"></i></a>
+          <a href="mailto:hello@hackertronix.com"><i class="material-icons icon md-48">mail</i></a>
       </div>
 
   </div>
@@ -62,13 +63,11 @@
           $("#main-heading").delay(2000).css("visibility","visible").typed({
               strings:["^1000coming soon"],
               typeSpeed: 200,
-              showCursor: false,
+              showCursor: true,
               loop: false,
               onStringTyped: function(){
-                  $("#content").addClass("animated rollIn").css("visibility","visible").one(animationEnd,function(){
-                      $(".arrow").addClass("animated rollIn").css("visibility","visible").one(animationEnd,function(){
-                          $(".icon").delay(1500).addClass("animated slideInDown").css("visibility","visible");
-                      });
+                  $(".icon").addClass("animated slideInDown").css("visibility","visible").one(animationEnd,function(){
+                      $(".together").delay(1500).addClass("animated bounce").css("visibility","visible");
                   });
               }
           });

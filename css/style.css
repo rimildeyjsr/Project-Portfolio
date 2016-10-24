@@ -6,7 +6,7 @@ html, body {
      overflow-y: hidden;
   }
 body {
-    animation: color-animation 50s infinite linear alternate;
+    animation: color-animation 80s infinite linear alternate;
 }
 
  @keyframes color-animation {
