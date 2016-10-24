@@ -55,16 +55,23 @@
   <script src="https://use.fontawesome.com/83638a08d2.js"></script>
   <script>
       $(document).ready(function(){
+          var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
           $("#heading").addClass("animated slideInUp").css("visibility","visible");
+
           $("#main-heading").delay(2000).css("visibility","visible").typed({
               strings:["^1000coming soon"],
               typeSpeed: 200,
               showCursor: false,
               loop: false,
+              onStringTyped: function(){
+                  $("#content").addClass("animated rollIn").css("visibility","visible").one(animationEnd,function(){
+                      $(".arrow").addClass("animated rollIn").css("visibility","visible").one(animationEnd,function(){
+                          $(".icon").delay(1500).addClass("animated slideInDown").css("visibility","visible");
+                      });
+                  });
+              }
           });
-
-
-
       });
   </script>
 </body>
