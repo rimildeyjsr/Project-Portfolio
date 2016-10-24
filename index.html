@@ -63,8 +63,9 @@
           $("#main-heading").delay(2000).css("visibility","visible").typed({
               strings:["^1000coming soon"],
               typeSpeed: 200,
-              showCursor: true,
               loop: false,
+              showCursor: true,
+              cursorChar: "|",
               onStringTyped: function(){
                   $(".icon").addClass("animated slideInDown").css("visibility","visible").one(animationEnd,function(){
                       $(".together").delay(1500).addClass("animated bounce").css("visibility","visible");
