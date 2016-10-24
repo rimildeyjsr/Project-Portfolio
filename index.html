@@ -66,6 +66,9 @@
               loop: false,
               showCursor: true,
               cursorChar: "|",
+              preStringTyped: function(){
+                  $(".main-heading").css("visibility","visible");
+              },
               onStringTyped: function(){
                   $(".icon").addClass("animated slideInDown").css("visibility","visible").one(animationEnd,function(){
                       $(".together").delay(1500).addClass("animated bounce").css("visibility","visible");
