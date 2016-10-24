@@ -33,7 +33,7 @@
     </div>
 
       <div class="main-heading my-font">
-         <h1 id="main-heading">coming soon</h1>
+         <span id="main-heading"></span>
       </div>
 
       <div class="content shadow-font">
@@ -51,10 +51,20 @@
   </div>
   <script src="js/jquery-3.0.0.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
+  <script src="typed.js-master/js/typed.js"></script>
   <script src="https://use.fontawesome.com/83638a08d2.js"></script>
   <script>
       $(document).ready(function(){
           $("#heading").addClass("animated slideInUp").css("visibility","visible");
+          $("#main-heading").delay(2000).css("visibility","visible").typed({
+              strings:["^1000coming soon"],
+              typeSpeed: 200,
+              showCursor: false,
+              loop: false,
+          });
+
+
+
       });
   </script>
 </body>
